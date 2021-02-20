@@ -1,7 +1,8 @@
 module.exports = {
   onPreBuild: ({ utils }) => {
     console.log("PROJECT NAME", process.env.PROJECT_NAME);
-    console.log("PROJECT REF", process.env.CACHED_COMMIT_REF);
+    console.log("CACHED REF", process.env.CACHED_COMMIT_REF);
+    console.log("CURRENT REF", process.env.COMMIT_REF);
 
     const currentProject = process.env.PROJECT_NAME;
     const lastDeployedCommit = process.env.CACHED_COMMIT_REF;
