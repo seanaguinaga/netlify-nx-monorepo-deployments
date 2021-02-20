@@ -11,7 +11,7 @@
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
             "outputPath": "dist/apps/bike-store",
-            "siteId": "e6a73bc7-c0cd-4374-ae88-9b379bce541f"
+            "siteId": "93a0ca60-1851-4bec-b9b5-b21f502ef0ca"
           }
         },
         "build": {
@@ -128,7 +128,7 @@
           "builder": "@netlify-builder/deploy:deploy",
           "options": {
             "outputPath": "dist/apps/car-store",
-            "siteId": "9346dab9-5fd4-465d-9af3-a85c46f043fa"
+            "siteId": "5738777b-a830-4902-a7f0-3814c3d3fc59"
           }
         },
         "build": {
