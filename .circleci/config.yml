@@ -10,7 +10,7 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-            - run: yarn affected:deploy --base=<< pipeline.git.base_revision >> --head=HEAD
+            - run: npm run affected:deploy --base=<< pipeline.git.base_revision >> --head=HEAD
 
 workflows:
   build-test-and-deploy:
