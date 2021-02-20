@@ -23,6 +23,7 @@ function projectChanged(currentProject, fromHash, toHash) {
   const execSync = require('child_process').execSync;
   const getAffected = `nx print-affected --base=${fromHash} --head=${toHash}`;
   const output = execSync(getAffected).toString();
+  console.log("OUTPUT", output)
   //get the list of changed projects from the output
   const changedProjects = JSON.parse(output).projects;
   if (changedProjects.find(project => project === currentProject)) {
