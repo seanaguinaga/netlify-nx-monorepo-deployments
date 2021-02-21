@@ -1,5 +1,5 @@
 module.exports = {
-  onPreBuild: ({ utils }) => {
+  onInit: ({ utils }) => {
     console.log("PROJECT NAME", process.env.PROJECT_NAME);
     console.log("CACHED REF", process.env.CACHED_COMMIT_REF);
     console.log("CURRENT REF", process.env.COMMIT_REF);
